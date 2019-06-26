@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-import Form from "react-bootstrap/Form";
 import Competitor from "./Competitor";
 import BrokenLinks from "./BrokenLinks";
-
+import "./extraCSS.css";
 
 class App extends Component {
   constructor(props) {
@@ -48,6 +47,7 @@ class App extends Component {
                 variant="success"
                 onClick={this.handleSelect1}
                 value="service1"
+                className="margintop"
               >
                 Find Competitors
               </Button>
@@ -55,6 +55,7 @@ class App extends Component {
                 variant="warning"
                 onClick={this.handleSelect2}
                 value="service2"
+                className="margintop"
               >
                 Find Broken-Links
               </Button>
